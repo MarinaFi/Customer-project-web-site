@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+box-sizing: border-box;
+}
+
+body {
+background-color: white;
+padding: 10px;
+font-family: Arial;
+}
+
+/* Center website */
+.main {
+max-width: 960px;
+margin: auto;
+}
+
+h1 {
+font-size: 50px
+word-break: break-all;
+}
+.row{
+margin: 0;
+}
+/* Add padding between each column */
+.row,
+.row > .column {
+padding: 0;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+float: left;
+width: 25%;
+}
+
+/*Clear floats after rows */
+.row:after {
+content:"";
+display: table;
+clear: both;
+}
+
+/* Content */
+.content {
+background-color: white;
+padding: 1px;
+//font-size: small;
+}
+
+/* Responsive layout - makes a two column-layout instead of four colums */
+@media screen and (max-width: 900px) {
+.column {
+width: 50%;
+}
+}
+/* Responsive layout - makes a two stack on top of each other instead of four colums next to each other */
+@media screen and (max-width: 600px) {
+.column {
+width: 100%;
+}
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+<h1 align="center"> Yhteystiedot</h1>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column" align="center">
+    <div class="content" align="center">
+      <img src="Julia.png" alt="Julia" style="width:130px">
+      <p><small>Julia Flovén <br /> CEO <br /> julia@vibevision.fi <br /> +358 40 1758531</small></p>
+    </div>
+  </div>
+  <div class="column" align="center">
+    <div class="content" align="center">
+      <img src="teppo_pyöreäteuna.jpg" alt="Teppo" style="width:130px">
+      <p><small>Teppo Toivonen <br /> Sales Director <br /> teppo@vibevision.fi <br /> +358 50 5550948 </small></p>
+    </div>
+  </div>
+  <div class="column" align="center">
+    <div class="content" align="center">
+      <img src="http://files.vibevision.webnode.fi/200000097-a4231a5181/200/Anu%20pyo%CC%88rea%CC%88.png" alt="Anu" style="width:130px">
+      <p><small>Dr. Anu-Maaria Sandmair <br /> Head of International Relations <br /> anumaaria@vibevision.fi <br /> +49 172 8951199</small></p>
+    </div>
+  </div>
+   <div class="column" align="center">
+    <div class="content" align="center">
+      <img src="http://files.vibevision.webnode.fi/200000096-c85a1c93dd/200/reijo_pyo%CC%88rea%CC%88reuna.jpg" alt="Reijo" style="width:130px">
+      <p><small>Reijo Karttunen <br /> Founder <br /> reijo@vibevision.fi <br /> +358 400 674 496</small> </p>
+    </div>
+  </div>
+</div>
+
+<!-- END MAIN -->
+</div>
